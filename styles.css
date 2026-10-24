@@ -1,0 +1,325 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fdfbf7;
+    color: #333333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* BARRA DE ANUNCIO */
+.top-bar {
+    background-color: #d97706;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* ENCABEZADO Y NAVEGACIÓN */
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo h2 {
+    color: #1f2937;
+}
+
+.Logo-amar {
+    color: #ff8d0b; 
+    display: inline-flex;
+    align-items: center;
+}
+
+.m-heart {
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 -0.1em;
+    transform: scale(2.0px) translate(3px, 3px);
+    )
+    
+}
+
+.logo-nav a {
+    text-decoration: none;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #dc2626;
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #dc2626;
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #b91c1c;
+}
+
+/* CATÁLOGO DE PRODUCTOS */
+.products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #1f2937;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-placeholder {
+    font-size: 3rem;
+    background-color: #fef3c7;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #1f2937;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-weight: bold;
+    color: #d97706;
+    margin-bottom: 15px;
+}
+
+.btn-card {
+    background-color: #16a34a;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-card:hover {
+    background-color: #15803d;
+}
+
+/* PIE DE PÁGINA */
+.footer {
+    background-color: #1f2937;
+    color: #9ca3af;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+/* --- ESTILOS DE LA PÁGINA DE CONTACTO --- */
+/* --- FONDO CON PLANTILLA DE CONDIMENTOS/COMIDA --- */
+.contacto-body {
+    /* Cargamos la imagen de fondo */
+    background-image: 
+        /* Capa semitransparente suave para opacar un poco la foto y resaltar el texto */
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+        /* Enlace a la imagen de especias/condimentos */
+        url('https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1620&q=80');
+
+    /* Ajustes para que el fondo cubra toda la pantalla de forma fija */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.contacto-card {
+    background: rgba(255, 255, 255, 0.96); /* Blanco con leve transparencia elegante */
+    padding: 35px 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3); /* Sombra más marcada para dar profundidad */
+    border-top: 6px solid #ff6710;
+    text-align: center;
+    max-width: 420px;
+    width: 90%;
+    backdrop-filter: blur(5px); /* Efecto cristal esmerilado detrás de la tarjeta */
+}
+.btn-volver {
+    display: inline-block;
+    color: #888;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    transition: color 0.2s;
+}
+
+.btn-volver:hover {
+    color: #ff6710;
+}
+
+.contacto-card h2 {
+    color: #1f2937;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+.contacto-sub {
+    color: #6b7280;
+    font-size: 0.95em;
+    margin-bottom: 25px;
+}
+
+.telefonos-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.telefono-item {
+    display: flex;
+    align-items: center;
+    padding: 14px 18px;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #374151;
+    transition: all 0.2s ease;
+}
+
+.telefono-item:hover {
+    transform: translateY(-2px);
+    border-color: #ff6710;
+    box-shadow: 0 4px 12px rgba(255, 103, 16, 0.15);
+    background-color: #fff8f5;
+}
+
+.telefono-item.whatsapp:hover {
+    border-color: #25d366;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.15);
+    background-color: #f0fdf4;
+}
+
+.icono-tel {
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+.tel-info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.tel-info strong {
+    font-size: 0.9em;
+    color: #1f2937;
+}
+
+.tel-info span {
+    font-size: 1.05em;
+    font-weight: bold;
+    color: #ff6710;
+}
+
+.telefono-item.whatsapp .tel-info span {
+    color: #25d366;
+}
