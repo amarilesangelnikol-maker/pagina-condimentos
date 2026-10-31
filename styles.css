@@ -17,15 +17,6 @@ body {
     padding: 0 20px;
 }
 
-/* BARRA DE ANUNCIO */
-.top-bar {
-    background-color: #d97706;
-    color: #ffffff;
-    text-align: center;
-    padding: 8px 10px;
-    font-size: 0.9rem;
-    font-weight: 600;
-}
 
 /* ENCABEZADO Y NAVEGACIÓN */
 .header {
@@ -82,7 +73,7 @@ body {
 }
 
 .nav a:hover {
-    color: #dc2626;
+    color: #ff8d0b;
 }
 
 /* HERO SECTION */
@@ -108,7 +99,7 @@ body {
 
 .btn {
     display: inline-block;
-    background-color: #dc2626;
+    background-color: #ff8d0b;
     color: #ffffff;
     padding: 12px 28px;
     border-radius: 50px;
@@ -118,7 +109,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #b91c1c;
+    background-color: #ff8d0b;
 }
 
 /* CATÁLOGO DE PRODUCTOS */
@@ -135,18 +126,19 @@ body {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 25px;
 }
 
 .product-card {
     background-color: #ffffff;
     border-radius: 12px;
-    padding: 20px;
+    padding: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     transition: transform 0.3s;
 }
 
@@ -322,4 +314,262 @@ body {
 
 .telefono-item.whatsapp .tel-info span {
     color: #25d366;
+}
+/* ==========================================
+   ESTILOS DE CATÁLOGO CON FOTOS CIRCULARES
+   ========================================== */jkml
+
+.catalogo-body {
+  background-color: #2e2d2d; /* Fondo oscuro gastronómico */
+  background-image:radial-gradient(circle, rgba(255, 255, 255, 0.4)1px, transparent 1.2px),
+  radial-gradient(circle, rgba(255, 255, 255, 0.4)1.5px, transparent 2px);
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.catalogo-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.catalogo-header h2 {
+  font-size: 2.2rem;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #f5f5f5;
+}
+rgb(44, 3, 3)rgb(44, 3, 3)rgb(136, 39, 39)rgb(44, 3, 3)
+.catalogo-header p {
+  color: #ff6710;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Grilla en filas/columnas ordenadas */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 30px;
+  margin: 40px auto;
+  max-width: 900px;
+  justify-items: center;
+}
+
+.producto-card-circulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+}
+
+/* Marco circular con borde verde sutil */
+.img-wrapper {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgb(255, 166, 33);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  margin-bottom: 12px;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.producto-card-circulo h3 {
+  font-size: 0.95rem;
+  margin: 5px 0;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.producto-card-circulo h3 small {
+  display: block;
+  font-weight: normal;
+  color: #aaa;
+  font-size: 0.8rem;
+}
+
+.producto-card-circulo .precio {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 4px;
+}
+
+.producto-card-circulo .ver-mas {
+  font-size: 0.75rem;
+  color: #aaa;
+  text-decoration: underline;
+  margin-top: 2px;
+}
+
+/* Pie con botón de WhatsApp */
+.catalogo-footer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.contacto-info strong {
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+
+.contacto-info p {
+  margin: 3px 0 0 0;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.btn-whatsapp {
+  background-color: #28a745;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background-color: #218838;
+}
+ ==========================================
+   ESTILOS DE condimentos CON FOTOS CIRCULARES
+   ========================================== */
+
+.catalogo-body {
+  background-color: #121212; /* Fondo oscuro gastronómico */
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.catalogo-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.catalogo-header h2 {
+  font-size: 2.2rem;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #f5f5f5;
+}
+rgb(44, 3, 3)rgb(44, 3, 3)rgb(136, 39, 39)rgb(44, 3, 3)
+.catalogo-header p {
+  color: #ff6710;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Grilla en filas/columnas ordenadas */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 30px;
+  margin: 40px auto;
+  max-width: 900px;
+  justify-items: center;
+}
+
+.producto-card-circulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+}
+
+/* Marco circular con borde verde sutil */
+.img-wrapper {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgb(255, 166, 33);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  margin-bottom: 12px;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.producto-card-circulo h3 {
+  font-size: 0.95rem;
+  margin: 5px 0;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.producto-card-circulo h3 small {
+  display: block;
+  font-weight: normal;
+  color: #aaa;
+  font-size: 0.8rem;
+}
+
+.producto-card-circulo .precio {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 4px;
+}
+
+.producto-card-circulo .ver-mas {
+  font-size: 0.75rem;
+  color: #aaa;
+  text-decoration: underline;
+  margin-top: 2px;
+}
+
+/* Pie con botón de WhatsApp */
+.catalogo-footer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.contacto-info strong {
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+
+.contacto-info p {
+  margin: 3px 0 0 0;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.btn-whatsapp {
+  background-color: #28a745;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background-color: #218838;
 }
